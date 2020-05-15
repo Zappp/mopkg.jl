@@ -1,7 +1,3 @@
-# x0k -> starting point
-# e -> epsilon
-# s -> sigma
-
 module mopkg
 
 
