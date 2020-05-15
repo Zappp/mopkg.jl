@@ -2,7 +2,7 @@
 # e -> epsilon
 # s -> sigma
 
-module interpolation_DSC
+module mopkg
 
 
 function rec_x(f, xp1k, s, p, n=1, xp2k=nothing)
