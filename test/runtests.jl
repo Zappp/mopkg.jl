@@ -2,5 +2,5 @@ using mopkg
 using Test
 
 @testset "mopkg.jl" begin
-    # Write your own tests here.
+@test my_func(2) == 3
 end

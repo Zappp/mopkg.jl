@@ -1,5 +1,5 @@
 module mopkg
-
-greet() = print("Hello World!")
+my_func(x) = x^2
+export my_func
 
 end # module
