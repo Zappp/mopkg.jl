@@ -34,7 +34,7 @@ function (inpol_dsc_::SVInterpol_DSC)(f, x0k; e, s)
                 if s <= e
                     return x0kn1, f(x0kn1)
                 else
-                    inpol_dsc(f, x0kn1, e ,s * K)
+                    return inpol_dsc(f, x0kn1, e ,s * K)
                 end
             end
         end
@@ -52,7 +52,7 @@ function (inpol_dsc_::SVInterpol_DSC)(f, x0k; e, s)
         if (2 ^ (n - 2)) * s <= e
             return x0kn1, f(x0kn1)
         else
-            inpol_dsc(f, x0kn1, e,s * K)
+            return inpol_dsc(f, x0kn1, e,s * K)
         end
     end
 
