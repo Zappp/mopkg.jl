@@ -43,8 +43,7 @@ function (inpol_dsc_::SVInterpol_DSC)(f, x0k; e, s)
         fmk = f(xmk)
 
         if fmk >= f(xp1k)
-            x0kn1 = xp1k + ((2 ^ (n - 2) * p * s * (f(xp2k) - fmk)) / (2 * (
-                    f(xp2k) - 2 * f(xp1k) + fmk)))
+            x0kn1 = xp1k + ((2 ^ (n - 2) * p * s * (f(xp2k) - fmk)) / (2 * (f(xp2k) - 2 * f(xp1k) + fmk)))
         elseif fmk < f(xp1k)
             x0kn1 = xmk + (((2 ^ (n - 2)) * p * s * (f(xp1k) - f(xnk))) / (2 * (f(xp1k) - (2 * fmk) + f(xnk))))
         end

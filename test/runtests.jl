@@ -14,7 +14,7 @@ svltf = Dict(
             for stval in tval
                 @testset "Epsilon tests" begin
                     for optim in subtypes(SVOptMethod)
-                        for tolerance in [1e-2, 1e-3, 1e-6]
+                        for tolerance in [1e-2, 1e-4, 1e-6]
                             @testset "sigma tests" begin
                                 for sigma in [1e-1, 1e-2, 1e-3]
                                     @test isapprox(cubic_optimize(fun, stval; eps=tolerance, sig=sigma, method=optim())[1], min[1], atol=tolerance)
